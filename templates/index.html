@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Input</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <h1>Please enter a piece of literature:</h1>
+    <form action="{{ url_for('form') }}" method="post">
+      <p>
+        <label for="text"></label>
+        <textarea name="text" rows="20" cols="100"></textarea>
+      </p>
+      <button>Submit</button>
+    </form>
+    {% if coleman_liau_index %}
+    <h1>Reading Level: {{ coleman_liau_index[3] }}</h1>
+    <h2>Letters: {{ coleman_liau_index[0] }}</h2>
+    <h2>Words: {{ coleman_liau_index[1] }}</h2>
+    <h2>Sentences: {{ coleman_liau_index[2] }}</h2>
+    {% endif %}
+  </body>
+</html>

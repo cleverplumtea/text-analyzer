@@ -1,0 +1,23 @@
+textarea {
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+#index {
+  font-size: 10em;
+}
+
+body {
+  margin-top: 5em;
+  margin-left: 5em;
+  background: url(books.jpg);
+  color: yellow;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
